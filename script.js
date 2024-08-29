@@ -23,10 +23,23 @@ const searchPokedex = async () =>{
         const data = await resolution.json();
         console.log(data);
         const {id, height, name, weight, types, stats, sprites } = data;
+        pokemonImage.innerHTML = `<img src="${sprites.front_default}" id="sprite">`
+        pokemonName.innerHTML = name.toUpperCase();
+        pokemonId.innerHTML = `#${id}`;
+        pokemonWeight.innerHTML = `Weight: ${weight}`
+        pokemonHeight.innerHTML = `height: ${height}`
+        pokemonTypes.innerHTML = types.map(type => `<span class="${type.type.name.toLowerCase()}">${type.type.name.toUpperCase()}</span>`).join("&nbsp;".repeat(10))
+        hp.innerHTML = stats[0].base_stat;
+        attack.innerHTML = stats[1].base_stat;
+        defense.innerHTML = stats[2].base_stat;
+        specialAttack.innerHTML = stats[3].base_stat;
+        specialDefense.innerHTML = stats[4].base_stat;
+        speed.innerHTML = stats[5].base_stat;
     }
 
     catch{
         console.log("error");
+        alert("Pokemon not found")
     }
 }
 

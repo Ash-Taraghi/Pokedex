@@ -27,6 +27,14 @@ h1 {
     align-items: center;
 }
 
+#height-weight {
+    display: flex;
+    gap: 10px; /* Add space between the items */
+}
+
+#weight, #height {
+    margin: 0;
+}
 #search {
     width: 100%;
     text-align: center;
@@ -77,7 +85,7 @@ label {
     padding: 10px;
     background-color: #ffffff; /* White */
     /*border: rgb(223, 223, 223) solid 10px;*/
-    color: white;
+    color: teal;
     border-radius: 5px;
     margin-top: 5vh;
     margin-bottom: 5vh;
