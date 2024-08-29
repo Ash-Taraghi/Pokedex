@@ -26,7 +26,7 @@ To run the PokeDex application locally, follow these steps:
 - A modern web browser.
 - An active internet connection to fetch Pokémon data from the API.
 
-1. **The website is hosted on github pages here []()
+1. **The website is hosted on github pages here [https://ash-taraghi.github.io/Pokedex/](https://ash-taraghi.github.io/Pokedex/)
 
 ## Files
 
